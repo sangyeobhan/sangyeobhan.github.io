@@ -23,6 +23,7 @@
   --ifm-color-primary-lightest: #00d979;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(254, 128, 25, 0.15);
+  word-spacing: -0.1em;
 }
 
 /* Gruvbox Dark 테마 - 코드 블럭 라인 강조 */
