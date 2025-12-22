@@ -82,7 +82,6 @@ const config = {
         showLastUpdateTime: false,
         showLastUpdateAuthor: false,
         blogSidebarCount: 20,
-        blogSidebarTitle: '최근 게시물',
         feedOptions: {
           type: ['rss', 'atom'],
           xslt: true,
@@ -92,6 +91,21 @@ const config = {
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
         onUntruncatedBlogPosts: 'warn',
+      },
+    ],
+  ],
+
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['ko', 'en'],
+        indexDocs: false,
+        indexBlog: true,
+        indexPages: false,
+        blogRouteBasePath: ['blog', 'journal'],
+        highlightSearchTermsOnTargetPage: true,
       },
     ],
   ],
