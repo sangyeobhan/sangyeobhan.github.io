@@ -1,0 +1,66 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@font-face {
+  font-family: 'IntelOneMono';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'IntelOneMono', monospace;
+  --ifm-color-primary: #00a85d;
+  --ifm-color-primary-dark: #009654;
+  --ifm-color-primary-darker: #008e4f;
+  --ifm-color-primary-darkest: #007541;
+  --ifm-color-primary-light: #00ba66;
+  --ifm-color-primary-lighter: #00c26b;
+  --ifm-color-primary-lightest: #00d979;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(254, 128, 25, 0.15);
+}
+
+/* Gruvbox Dark 테마 - 코드 블럭 라인 강조 */
+[data-theme='light'] .docusaurus-highlight-code-line {
+  background-color: rgba(254, 128, 25, 0.15);
+  border-left: 3px solid #fe8019;
+}
+
+/* 코드 블럭 전체 스타일 조정 */
+[data-theme='light'] div[class^='codeBlockContainer'] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 반투명 헤더 */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 버튼 스타일 */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+.button--secondary {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}

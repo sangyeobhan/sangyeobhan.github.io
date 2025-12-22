@@ -1,0 +1,180 @@
+---
+slug: welcome
+title: Docusaurus 기능 시연
+authors: [sangyeob]
+tags: [docusaurus, mdx, tutorial]
+---
+
+import Highlight from '@site/src/components/Highlight';
+
+Docusaurus의 다양한 기능들을 시연하는 페이지입니다.
+MDX를 사용하면 마크다운 안에서 React 컴포넌트를 사용할 수 있습니다.
+
+{/* truncate */}
+
+## 1. 코드 블록
+
+기본 코드 블록입니다:
+
+```javascript
+function greet(name) {
+  console.log(`안녕하세요, ${name}님!`);
+}
+
+greet('개발자');
+```
+
+### 언어별 코드 블록
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10))
+```
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const user: User = {
+  id: 1,
+  name: '홍길동',
+  email: 'hong@example.com'
+};
+```
+
+## 2. 코드 블록 라인 강조
+
+특정 라인을 강조할 수 있습니다:
+
+```jsx title="src/components/HelloWorld.jsx" {3,5-7}
+import React from 'react';
+
+export default function HelloWorld() {
+  return (
+    <div>
+      <h1>안녕하세요!</h1>
+      <p>이 라인들이 강조됩니다.</p>
+    </div>
+  );
+}
+```
+
+## 3. React 컴포넌트 사용
+
+MDX에서는 커스텀 React 컴포넌트를 사용할 수 있습니다:
+
+<Highlight>기본 색상 강조</Highlight>,
+<Highlight color="#25c2a0">초록색 강조</Highlight>,
+<Highlight color="#1877F2"> 파란색 강조</Highlight>를
+사용할 수 있습니다!
+
+## 4. Admonitions (경고/팁)
+
+:::note
+이것은 노트입니다. 일반적인 정보를 전달할 때 사용합니다.
+:::
+
+:::tip 유용한 팁
+코드 블록에 `title` 속성을 추가하면 파일명을 표시할 수 있습니다!
+:::
+
+:::info
+추가 정보나 참고사항을 표시합니다.
+:::
+
+:::warning 주의
+이 기능을 사용할 때는 주의가 필요합니다.
+:::
+
+:::danger 위험
+절대로 production 환경에서 이 코드를 사용하지 마세요!
+:::
+
+## 5. 코드 블록에 파일명 표시
+
+```bash title="터미널"
+npm install @docusaurus/core
+npm start
+```
+
+```css title="src/css/custom.css"
+:root {
+  --primary-color: #25c2a0;
+  --secondary-color: #1877F2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+```
+
+## 6. 표(Table)
+
+| 기능 | 설명 | 지원 여부 |
+|------|------|-----------|
+| 코드 강조 | 특정 라인 강조 | ✅ |
+| React 컴포넌트 | MDX에서 사용 가능 | ✅ |
+| 다크모드 | 테마 전환 | ✅ |
+| 검색 | 전체 문서 검색 | ✅ |
+
+## 7. 인용구
+
+> "좋은 코드는 그 자체로 최고의 문서다."
+>
+> — Steve McConnell
+
+## 8. 리스트
+
+### 순서 없는 리스트
+- Docusaurus는 강력한 정적 사이트 생성기입니다
+  - React 기반으로 작동합니다
+  - MDX를 지원합니다
+- 블로그와 문서 사이트에 적합합니다
+  - 버전 관리 기능
+  - 국제화(i18n) 지원
+
+### 순서 있는 리스트
+1. Docusaurus 설치
+2. 프로젝트 설정
+3. 콘텐츠 작성
+4. 빌드 및 배포
+
+## 9. 이미지
+
+![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+
+## 10. 링크
+
+- [Docusaurus 공식 문서](https://docusaurus.io)
+- [MDX 문서](https://mdxjs.com)
+- 내부 링크: [다른 포스트로](/blog)
+
+## 11. 인라인 코드와 키보드
+
+파일을 저장하려면 `Ctrl + S` (Windows) 또는 <kbd>Cmd</kbd> + <kbd>S</kbd> (Mac)을 누르세요.
+
+`npm install` 명령어로 패키지를 설치할 수 있습니다.
+
+## 12. 구분선
+
+---
+
+## 마무리
+
+이 문서에서는 Docusaurus의 주요 기능들을 시연했습니다:
+
+✨ **코드 블록**: 다양한 언어 지원 및 문법 강조
+🎯 **라인 강조**: 중요한 코드 라인 표시
+⚛️ **React 컴포넌트**: MDX에서 직접 사용
+📝 **Admonitions**: 노트, 팁, 경고 등
+🎨 **마크다운**: 표, 리스트, 링크 등 모든 기본 기능
+
+더 많은 기능은 [Docusaurus 문서](https://docusaurus.io/docs)를 참고

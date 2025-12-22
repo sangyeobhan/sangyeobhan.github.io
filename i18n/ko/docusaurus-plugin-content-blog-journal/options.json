@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Journal",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "개발 일지",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Recent posts",
+    "description": "The label for the left sidebar"
+  }
+}
