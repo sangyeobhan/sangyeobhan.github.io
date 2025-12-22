@@ -39,9 +39,15 @@
 /* 반투명 헤더 */
 .navbar {
   background-color: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(10px);
   box-shadow: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 데스크톱에서만 backdrop-filter 적용 (모바일 사이드바 렌더링 이슈 방지) */
+@media (min-width: 997px) {
+  .navbar {
+    backdrop-filter: blur(10px);
+  }
 }
 
 /* 버튼 스타일 */
