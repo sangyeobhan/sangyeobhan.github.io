@@ -51,8 +51,9 @@ const config = {
           routeBasePath: 'blog',
           path: './blog',
           showReadingTime: true,
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           showLastUpdateAuthor: false,
+          blogSidebarCount: 20,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -78,8 +79,10 @@ const config = {
         routeBasePath: 'journal',
         path: './journal',
         showReadingTime: true,
-        showLastUpdateTime: true,
+        showLastUpdateTime: false,
         showLastUpdateAuthor: false,
+        blogSidebarCount: 20,
+        blogSidebarTitle: '최근 게시물',
         feedOptions: {
           type: ['rss', 'atom'],
           xslt: true,
